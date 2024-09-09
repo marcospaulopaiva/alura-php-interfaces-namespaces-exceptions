@@ -1,6 +1,6 @@
 <?php 
 
-class Filme extends Titulo
+class Filme extends Titulo 
 {
 
     public function __construct(

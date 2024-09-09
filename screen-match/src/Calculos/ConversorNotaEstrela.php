@@ -6,8 +6,6 @@ class ConversorNotaEstrela
     {
         $nota = $avaliavel->media();
 
-        // Realiza a conversão
-
         return round($nota) / 2;
     }
 }
