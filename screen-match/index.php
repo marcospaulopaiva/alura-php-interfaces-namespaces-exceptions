@@ -2,6 +2,7 @@
 
 require __DIR__ . "/src/Model/Genero.php";
 require __DIR__ . "/src/Model/Titulo.php";
+require __DIR__ . "/src/Model/Episodio.php";
 require __DIR__ . "/src/Model/Serie.php";
 require __DIR__ . "/src/Model/Filme.php";
 require __DIR__ . "/src/Calculos/CalculadoraDeMaratona.php";
@@ -21,7 +22,8 @@ echo $filme->media() . "\n";
 
 echo $filme->anoLancamento . "\n";
 
-$serie = new Serie('Lost', 2008, Genero::Drama, 5, 22, 30);
+$serie = new Serie('Lost', 2007, Genero::Drama, 10, 20, 30);
+$episodio = new Episodio($serie, 'Episódio piloto', 1);
 
 echo $serie->anoLancamento . "\n";
 
