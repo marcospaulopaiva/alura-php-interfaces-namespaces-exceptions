@@ -1,14 +1,6 @@
 <?php
 
-require __DIR__ . "/src/Model/ComAvaliacao.php";
-require __DIR__ . "/src/Model/Avaliavel.php";
-require __DIR__ . "/src/Model/Genero.php";
-require __DIR__ . "/src/Model/Titulo.php";
-require __DIR__ . "/src/Model/Episodio.php";
-require __DIR__ . "/src/Model/Serie.php";
-require __DIR__ . "/src/Model/Filme.php";
-require __DIR__ . "/src/Calculos/CalculadoraDeMaratona.php";
-require __DIR__ . "/src/Calculos/ConversorNotaEstrela.php";
+require 'autoload.php';
 
 use ScreenMatch\Model\{
     Genero, Filme, Serie, Episodio
