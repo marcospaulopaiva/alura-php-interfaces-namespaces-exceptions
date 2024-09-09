@@ -10,6 +10,15 @@ require __DIR__ . "/src/Model/Filme.php";
 require __DIR__ . "/src/Calculos/CalculadoraDeMaratona.php";
 require __DIR__ . "/src/Calculos/ConversorNotaEstrela.php";
 
+use ScreenMatch\Model\{
+    Genero, Filme, Serie, Episodio
+};
+use ScreenMatch\Calculos\{
+    CalculadoraDeMaratona,
+    ConversorNotaEstrela
+};
+
+
 echo "Bem-vindo(a) ao ScreenMatch\n";
 
 $filme = new Filme('Thor - Ragnarok', 2021, Genero::SuperHeroi, 180);
