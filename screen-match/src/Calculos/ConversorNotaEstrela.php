@@ -2,6 +2,7 @@
 
 namespace ScreenMatch\Calculos;
 
+use ArgumentCountError;
 use DivisionByZeroError;
 use ScreenMatch\Model\Avaliavel;
 
@@ -14,8 +15,11 @@ class ConversorNotaEstrela
 
             return round($nota) / 2;
         } 
-        catch (DivisionByZeroError $erro) {
-            echo $erro->getMessage();
+        catch (DivisionByZeroError) {
+            return 0;
+        }
+        catch(ArgumentCountError $erro) {
+            echo $erro->getMessage() . "\n" ;
             return 0;
         }
     }
